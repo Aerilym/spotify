@@ -1,0 +1,61 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>spotify</title><meta name="description" content="Documentation for spotify"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container">
+<div class="table-cell" id="tsd-search" data-base=".">
+<a href="" class="title">Spotify API Wrapper</a></div>
+<div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="7" width="14" height="2" fill="var(--color-text)"></rect><rect x="1" y="11" width="14" height="2" fill="var(--color-text)"></rect></svg></a></div></div></header>
+<div class="container container-main">
+<div class="col-8 col-content">
+<div class="tsd-panel tsd-typography">
+<a href="#spotify-api-wrapper" id="spotify-api-wrapper" style="color: inherit; text-decoration: none;">
+  <h1>Spotify API Wrapper</h1>
+</a>
+<p>This is a wrapper for the Spotify API. It is written in TypeScript and is designed to be used with any JavaScript framework. There are examples for using it with different frameworks in the <code>examples</code> folder and in the <a href="docs/v1/">documentation</a>.</p>
+
+<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+  <h2>Usage</h2>
+</a>
+<p>Import the API class and initialize it.</p>
+<pre><code class="language-typescript"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">SpotifyAPI</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;spotify-api-wrapper&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">spotify</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">SpotifyAPI</span><span class="hl-1">();</span>
+</code></pre>
+<p>Initialize the API with a client ID and client secret. See the <a href="https://developer.spotify.com/documentation/general/guides/authorization/">Spotify Authorization Guide</a> for more information about which auth method to use.</p>
+<pre><code class="language-typescript"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">SpotifyAPI</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;spotify-api-wrapper&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">spotify</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">SpotifyAPI</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-2">clientID:</span><span class="hl-1"> </span><span class="hl-3">&#39;CLIENT_ID&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-2">clientSecret:</span><span class="hl-1"> </span><span class="hl-3">&#39;CLIENT_SECRET&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">});</span>
+</code></pre>
+<p>You can also initialize the API with an access token. This is useful if you already have an access token and don&#39;t want to make a request to get a new one. But this is not recommended as the access token will expire and there is a better way.</p>
+<pre><code class="language-typescript"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">SpotifyAPI</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;spotify-api-wrapper&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">spotify</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">SpotifyAPI</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-2">accessToken:</span><span class="hl-1"> </span><span class="hl-3">&#39;ACCESS_TOKEN&#39;</span><span class="hl-1">,</span><br/><span class="hl-1">});</span>
+</code></pre>
+<p>If you want to use the API with a user&#39;s access token, you can initialize the API with nothing and set the access token whenever you receive one</p>
+<pre><code class="language-typescript"><span class="hl-0">import</span><span class="hl-1"> { </span><span class="hl-2">SpotifyAPI</span><span class="hl-1"> } </span><span class="hl-0">from</span><span class="hl-1"> </span><span class="hl-3">&#39;spotify-api-wrapper&#39;</span><span class="hl-1">;</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">spotify</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">SpotifyAPI</span><span class="hl-1">();</span><br/><br/><span class="hl-2">spotify</span><span class="hl-1">.</span><span class="hl-6">setAccessToken</span><span class="hl-1">(</span><span class="hl-3">&#39;ACCESS_TOKEN&#39;</span><span class="hl-1">);</span>
+</code></pre>
+<p>You can add and clear an access token with each call if you wish. This is useful if you are using the API with a user&#39;s access token and you want to make a request with a different user&#39;s access token or if you&#39;re getting the access token from a different source.</p>
+<pre><code class="language-typescript"><span class="hl-2">spotify</span><span class="hl-1">.</span><span class="hl-6">setAccessToken</span><span class="hl-1">(</span><span class="hl-3">&#39;ACCESS_TOKEN&#39;</span><span class="hl-1">);</span><br/><br/><span class="hl-2">spotify</span><span class="hl-1">.</span><span class="hl-6">getAlbum</span><span class="hl-1">(</span><span class="hl-3">&#39;ALBUM_ID&#39;</span><span class="hl-1">);</span><br/><br/><span class="hl-2">spotify</span><span class="hl-1">.</span><span class="hl-6">clearAccessToken</span><span class="hl-1">();</span>
+</code></pre>
+
+<a href="#examples" id="examples" style="color: inherit; text-decoration: none;">
+  <h2>Examples</h2>
+</a>
+<p>There are examples for using the API with different frameworks in the <code>examples</code> folder and in the <a href="docs/v1/">documentation</a>.</p>
+<p>If there&#39;s a framework or use case you want to see an example for, please open an issue or contribute an example yourself with a pull request.</p>
+
+<a href="#issues" id="issues" style="color: inherit; text-decoration: none;">
+  <h2>Issues</h2>
+</a>
+<p>If you encounter any issues or have any suggestions, please open an issue on the <a href="TBD">GitHub repository</a>. If you&#39;re confident, free to try resolve your issue or any other issues by opening a pull request and contributing to the project.</p>
+
+<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+  <h2>Contributing</h2>
+</a>
+<p>Everything is written in TypeScript and compiled into JavaScript. The compiled JavaScript is not included in the repository. To compile the TypeScript into JavaScript, run the <code>build</code> command. The workspace has several recommended extensions and is set up to use <a href="https://eslint.org/">ESLint</a> and <a href="https://prettier.io/">Prettier</a> for linting and formatting. The workspace is also set up to use <a href="https://jestjs.io/">Jest</a> for testing.</p>
+</div>
+</div>
+<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+<div class="tsd-navigation">
+  <ul>
+    <li><a href="v1/">V1 wrapper documentation</a></li>
+    <li><a href="https://github.com/Aerilym/spotify">GitHub repository</a></li>
+    <li><a href="https://developer.spotify.com/documentation/web-api/">Spotify API documentation</a></li>
+  </ul>
+</div>
+</div></div>
+<div class="container tsd-generator">
+<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
+<div class="overlay"></div><script src="assets/main.js"></script></body></html>

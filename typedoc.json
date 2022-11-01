@@ -1,0 +1,6 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "Spotify API Wrapper",
+  "excludePrivate": true,
+  "excludeProtected": true,
+}

@@ -1409,7 +1409,7 @@ export default class SpotifyAPI {
 /**
  * A class for the Spotify Web API authorization flow and authorization management.
  */
-class Auth {
+export class Auth {
   private accessToken?: string;
   private accessTokenExpireDate?: Date;
   public refreshExpiredAccessToken: boolean;
