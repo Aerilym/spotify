@@ -28,7 +28,7 @@
     "format": "prettier --config .prettierrc src/**/*.ts --write",
     "build": "run-s clean:build && tsc -p tsconfig.module.json",
     "test": "node --loader ts-node/esm --experimental-specifier-resolution=node scripts/tester && jest",
-    "test:user": "node --loader ts-node/esm --experimental-specifier-resolution=node scripts/tester --usertest && jest",
+    "test:user": "run-s clean:coverage && node --loader ts-node/esm --experimental-specifier-resolution=node scripts/tester --usertest && jest",
     "test:build": "run-s build && node --loader ts-node/esm --experimental-specifier-resolution=node scripts/tester && jest",
     "user-auth": "node --loader ts-node/esm --experimental-specifier-resolution=node scripts/user-auth",
     "docs": "run-s clean:docs-publish clean:docs-tmp docs:readme docs:home docs:publish clean:docs-tmp",

@@ -80,7 +80,7 @@ describe('Playlists can be created, modified, and deleted', () => {
     expect(gotPlaylist2).toBeDefined();
     expect(gotPlaylist2.tracks.items.length).toBe(0);
   });
-  it('can have tracks reordered', async () => {
+  /* it('can have tracks reordered', async () => {
     const added = await spotifyUserAuth.addTracksToPlaylist(playlistId, tracks);
     expect(added).toBeDefined();
     expect(added.snapshot_id).toBeDefined();
@@ -139,5 +139,5 @@ describe('Playlists can be created, modified, and deleted', () => {
         expect(gotPlaylist2.tracks.items[2].track.uri).toBe(tracks[1]);
       }
     }
-  });
+  }); */
 });
