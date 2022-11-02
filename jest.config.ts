@@ -5,7 +5,7 @@ const config: Config = {
   testMatch: ['**/*.test.ts'],
   maxConcurrency: 10,
   collectCoverage: true,
-  coverageReporters: ['json', 'text'],
+  coverageReporters: ['json-summary', 'text'],
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coveragePathIgnorePatterns: ['src/types'],
   coverageThreshold: {

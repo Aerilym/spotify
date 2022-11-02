@@ -13,5 +13,5 @@ jobs:
         uses: MishaKav/jest-coverage-comment@v1.0.20
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          coverage-summary-path: ./coverage/coverage-final.json
-          
+          coverage-summary-path: ./coverage/coverage-summary.json
+
