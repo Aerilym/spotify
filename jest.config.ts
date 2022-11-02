@@ -5,6 +5,7 @@ const config: Config = {
   testMatch: ['**/*.test.ts'],
   maxConcurrency: 10,
   collectCoverage: true,
+  reporters: ['default', ['jest-junit', { outputDirectory: 'coverage', outputName: 'junit.xml' }]],
   coverageReporters: ['json-summary', 'text'],
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coveragePathIgnorePatterns: ['src/types'],

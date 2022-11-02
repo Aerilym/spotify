@@ -14,4 +14,15 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           coverage-summary-path: ./coverage/coverage-summary.json
+          title: Jest Coverage Comment
+          summary-title: Summary
+          badge-title: Coverage
+          hide-comment: false
+          create-new-comment: false
+          hide-summary: false
+          junitxml-title: JUnit
+          junitxml-path: ./coverage/junit.xml
+          coverage-title: Coverage
+          coverage-path: ./coverage/coverage.txt
+
 
