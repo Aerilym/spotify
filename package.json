@@ -29,7 +29,7 @@
     "build": "run-s clean:build && tsc -p tsconfig.module.json",
     "pretest": "node --loader ts-node/esm --experimental-specifier-resolution=node scripts/pretest --usertest",
     "test": "jest",
-    "test:ci": "run-s clean:coverage test | tee ./coverage/coverage.txt",
+    "test:ci": "run-s clean:coverage pretest && jest | tee ./coverage/coverage.txt",
     "user-auth": "node --loader ts-node/esm --experimental-specifier-resolution=node scripts/user-auth",
     "docs": "run-s clean:docs-publish clean:docs-tmp docs:readme docs:home docs:publish clean:docs-tmp",
     "docs:publish": "typedoc src/index.ts --out docs/v1 --readme none",
