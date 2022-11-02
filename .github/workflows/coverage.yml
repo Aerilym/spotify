@@ -9,7 +9,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Jest coverage report
-        uses: ArtiomTr/jest-coverage-report-action@v2.1.2
+      - name: Jest Coverage Comment
+        uses: MishaKav/jest-coverage-comment@v1.0.20
         with:
-          coverage-file: ./coverage/coverage-final.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          coverage-summary-path: ./coverage/coverage-final.json
+          
