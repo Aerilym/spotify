@@ -60,6 +60,7 @@ export interface SpotifyFetchOptions {
 }
 
 //TODO: Properly type post data once post data is implemented.
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type SpotifyBody = any;
 
 export interface SpotifyRequestOptions {

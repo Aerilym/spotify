@@ -1,4 +1,4 @@
-import { SpotifyID, SpotifyRequestMethod, SpotifyResource, SpotifyURI } from './types/types';
+import { SpotifyID, SpotifyResource, SpotifyURI } from './types/types';
 
 type Fetch = typeof fetch;
 
@@ -28,6 +28,9 @@ export const addTrailingSlash = (url: string): string => {
   return `${url}/`;
 };
 
+/**
+ *
+ */
 export function spotifyURI(
   strings: TemplateStringsArray,
   resource: SpotifyResource,
@@ -37,15 +40,24 @@ export function spotifyURI(
   return `spotify:${resource}:${id}`;
 }
 
+/**
+ *
+ */
 export function isSpotifyID(id: string): id is SpotifyID {
   const regex = /^[0-9A-Za-z_-]{22}$/;
   return regex.test(id);
 }
 
+/**
+ *
+ */
 export function createURI(resource: SpotifyResource, id: SpotifyID): SpotifyURI {
   return spotifyURI`${resource}${id}`;
 }
 
+/**
+ *
+ */
 export function createURIs(resource: SpotifyResource, ids: SpotifyID[]): SpotifyURI[] {
   return ids.map((id) => createURI(resource, id));
 }

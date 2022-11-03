@@ -1,5 +1,5 @@
 import { Fetch } from './types/fetch';
-import { addTrailingSlash, createURIs, resolveFetch, spotifyURI } from './helpers';
+import { addTrailingSlash, createURIs, resolveFetch } from './helpers';
 import type {
   PlaylistOptions,
   DeviceOptions,
@@ -1107,6 +1107,7 @@ export default class SpotifyAPI {
    * @param deviceID - The ID of the device on which playback should be started/transferred.
    */
   // TODO: Refer to Spotify API docs for proper request and ensure it works.
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   transferMyPlayback = async (deviceID: string): Promise<any> => {
     const payload: SpotifyRequestOptions = {
       method: 'PUT',
@@ -1123,6 +1124,7 @@ export default class SpotifyAPI {
    * @See [Start/Resume a User's Playback](https://developer.spotify.com/documentation/web-api/reference/player/start-a-users-playback/)
    * @param options - An object with options that can be passed.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   play = async (options: PlayOptions): Promise<any> => {
     const payload: SpotifyRequestOptions = {
       method: 'PUT',
@@ -1160,6 +1162,7 @@ export default class SpotifyAPI {
    * @See [Pause a User’s Playback](https://developer.spotify.com/web-api/pause-a-users-playback/)
    * @param options - An object with options that can be passed.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   pause = async (options: DeviceOptions): Promise<any> => {
     const payload: SpotifyRequestOptions = {
       method: 'PUT',
@@ -1174,6 +1177,7 @@ export default class SpotifyAPI {
    * @See [Skip User’s Playback To Next Track](https://developer.spotify.com/web-api/skip-users-playback-to-next-track/)
    * @param options - An object with options that can be passed.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   skipToNext = async (options: DeviceOptions): Promise<any> => {
     const payload: SpotifyRequestOptions = {
       method: 'POST',
@@ -1190,6 +1194,7 @@ export default class SpotifyAPI {
    * @See [Skip User’s Playback To Previous Track](https://developer.spotify.com/web-api/skip-users-playback-to-next-track/)
    * @param options - An object with options that can be passed.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   skipToPrevious = async (options: DeviceOptions): Promise<any> => {
     const payload: SpotifyRequestOptions = {
       method: 'POST',
@@ -1205,6 +1210,7 @@ export default class SpotifyAPI {
    * @param position_ms - The position in milliseconds to seek to. Must be a positive number.
    * @param options - An object with options that can be passed.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   seek = async (position_ms: number, options: SeekOptions): Promise<any> => {
     const params = {
       position_ms: position_ms,
@@ -1224,6 +1230,7 @@ export default class SpotifyAPI {
    * @param state - A string set to 'track', 'context' or 'off'.
    * @param options - An object with options that can be passed.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setRepeat = async (state: string, options: SetRepeatOptions): Promise<any> => {
     const params = {
       state: state,
@@ -1243,6 +1250,7 @@ export default class SpotifyAPI {
    * @param volume_percent - The volume to set. Must be a value from 0 to 100 inclusive.
    * @param options - An object with options that can be passed.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setVolume = async (volume_percent: number, options: SetVolumeOptions): Promise<any> => {
     const params = {
       volume_percent: volume_percent,
@@ -1262,6 +1270,7 @@ export default class SpotifyAPI {
    * @param state - Whether or not to shuffle user's playback.
    * @param options - An object with options that can be passed.
    */
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   setShuffle = async (state: boolean, options: SetShuffleOptions): Promise<any> => {
     const params = {
       state: state,

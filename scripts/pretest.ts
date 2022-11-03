@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 import inquirer from 'inquirer';
 import fs from 'fs';
-import { execa } from 'execa';
 import * as dotenv from 'dotenv';
 import { spawn } from 'node:child_process';
 dotenv.config();
@@ -15,6 +14,9 @@ interface Args {
   clientSecret: string;
 }
 
+/**
+ *
+ */
 async function getArgs(): Promise<Args> {
   return await inquirer.prompt([
     {
@@ -30,6 +32,9 @@ async function getArgs(): Promise<Args> {
   ]);
 }
 
+/**
+ *
+ */
 async function createEnv(args: Args): Promise<void> {
   fs.writeFile('.env', `CLIENT_ID=${args.clientID}\nCLIENT_SECRET=${args.clientSecret}`, (err) => {
     if (err) {
@@ -38,6 +43,9 @@ async function createEnv(args: Args): Promise<void> {
   });
 }
 
+/**
+ *
+ */
 async function main(): Promise<void> {
   if (!process.env.CLIENT_ID || !process.env.CLIENT_SECRET) {
     const args = await getArgs();
