@@ -611,8 +611,8 @@ export default class SpotifyAPI {
   /**
    * Replace the items in a playlist with a list of tracks.
    * @See [Replace a Playlist's Tracks](https://developer.spotify.com/web-api/replace-playlists-tracks/)
-   * @see {@link replacePlaylist} for replacing with any items.
-   * @remarks This method is a convenience method for {@link replaceInPlaylist}.
+   * @see {@link replacePlaylistItems} for replacing with any items.
+   * @remarks This method is a convenience method for {@link replacePlaylistItems}.
    * @param playlistID - The id of the playlist.
    * @param trackURIs - A list of Spotify URIs for the tracks
    */

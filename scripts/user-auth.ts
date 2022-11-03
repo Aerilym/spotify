@@ -140,6 +140,9 @@ app.get('/callback', async function (req, res) {
     process.exit(0);
   }
 });
-console.log('Spotify user oauth session started on http://localhost:8888/login');
+
+console.log(
+  '\x1b[33m Spotify user oauth session started. Complete Spotify authentication at http://localhost:8888/login \x1b[0m'
+);
 
 app.listen(8888);

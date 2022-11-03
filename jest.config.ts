@@ -3,10 +3,11 @@ const config: Config = {
   preset: 'ts-jest',
   testEnvironment: 'node',
   testMatch: ['**/*.test.ts'],
-  maxConcurrency: 10,
+  maxConcurrency: 20,
+  testTimeout: 10000,
   collectCoverage: true,
   reporters: ['default', ['jest-junit', { outputDirectory: 'coverage', outputName: 'junit.xml' }]],
-  coverageReporters: ['json-summary', 'text'],
+  coverageReporters: ['json-summary', 'text', 'clover', 'lcov'],
   collectCoverageFrom: ['src/**/*.{ts,tsx}'],
   coveragePathIgnorePatterns: ['src/types'],
   coverageThreshold: {

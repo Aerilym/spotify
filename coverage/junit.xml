@@ -1,57 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="107" failures="0" errors="0" time="24.274">
-  <testsuite name="Trailing Slash" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="5.725" tests="10">
+<testsuites name="jest tests" tests="107" failures="0" errors="0" time="19.357">
+  <testsuite name="Trailing Slash" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="4.069" tests="10">
     <testcase classname="Trailing Slash adds a trailing slash to a url if one does not exist" name="Trailing Slash adds a trailing slash to a url if one does not exist" time="0.003">
     </testcase>
     <testcase classname="Trailing Slash doesnt change the url if it has a trailing slash" name="Trailing Slash doesnt change the url if it has a trailing slash" time="0.001">
     </testcase>
     <testcase classname="Spotify URI returns a Spotify URI when a valid ID is given" name="Spotify URI returns a Spotify URI when a valid ID is given" time="0.001">
     </testcase>
-    <testcase classname="Spotify URI throws an error when an invalid ID is given" name="Spotify URI throws an error when an invalid ID is given" time="0.015">
+    <testcase classname="Spotify URI throws an error when an invalid ID is given" name="Spotify URI throws an error when an invalid ID is given" time="0.014">
     </testcase>
-    <testcase classname="Spotify ID returns true when a valid ID is given" name="Spotify ID returns true when a valid ID is given" time="0.001">
+    <testcase classname="Spotify ID returns true when a valid ID is given" name="Spotify ID returns true when a valid ID is given" time="0">
     </testcase>
-    <testcase classname="Spotify ID returns false when an invalid ID is given" name="Spotify ID returns false when an invalid ID is given" time="0.001">
+    <testcase classname="Spotify ID returns false when an invalid ID is given" name="Spotify ID returns false when an invalid ID is given" time="0">
     </testcase>
-    <testcase classname="Create URI returns a Spotify URI when a valid ID is given" name="Create URI returns a Spotify URI when a valid ID is given" time="0">
+    <testcase classname="Create URI returns a Spotify URI when a valid ID is given" name="Create URI returns a Spotify URI when a valid ID is given" time="0.001">
     </testcase>
     <testcase classname="Create URI throws an error when an invalid ID is given" name="Create URI throws an error when an invalid ID is given" time="0.001">
     </testcase>
-    <testcase classname="Create URIs returns a Spotify URI when a valid ID is given" name="Create URIs returns a Spotify URI when a valid ID is given" time="0.001">
+    <testcase classname="Create URIs returns a Spotify URI when a valid ID is given" name="Create URIs returns a Spotify URI when a valid ID is given" time="0.002">
     </testcase>
-    <testcase classname="Create URIs throws an error when an invalid ID is given" name="Create URIs throws an error when an invalid ID is given" time="0.001">
+    <testcase classname="Create URIs throws an error when an invalid ID is given" name="Create URIs throws an error when an invalid ID is given" time="0.002">
     </testcase>
   </testsuite>
-  <testsuite name="Client Auth flow works as expected" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="7.697" tests="3">
+  <testsuite name="Client Auth flow works as expected" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="4.638" tests="3">
     <testcase classname="Client Auth flow works as expected No initial Client ID or Secret defined" name="Client Auth flow works as expected No initial Client ID or Secret defined" time="0.001">
     </testcase>
-    <testcase classname="Client Auth flow works as expected Throws a no client ID or Secret found error when no Client ID or Secret is defined" name="Client Auth flow works as expected Throws a no client ID or Secret found error when no Client ID or Secret is defined" time="0.031">
+    <testcase classname="Client Auth flow works as expected Throws a no client ID or Secret found error when no Client ID or Secret is defined" name="Client Auth flow works as expected Throws a no client ID or Secret found error when no Client ID or Secret is defined" time="0.028">
     </testcase>
-    <testcase classname="Client Auth flow works as expected Throws a could not refresh access token error when Client ID or Secret are wrong" name="Client Auth flow works as expected Throws a could not refresh access token error when Client ID or Secret are wrong" time="0.315">
-    </testcase>
-  </testsuite>
-  <testsuite name="Spotify API client works with custom fetch implementations" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="8.296" tests="2">
-    <testcase classname="Spotify API client works with custom fetch implementations works with default fetch implementation" name="Spotify API client works with custom fetch implementations works with default fetch implementation" time="0.62">
-    </testcase>
-    <testcase classname="Spotify API client works with custom fetch implementations works with custom fetch implementation node-fetch" name="Spotify API client works with custom fetch implementations works with custom fetch implementation node-fetch" time="0.389">
+    <testcase classname="Client Auth flow works as expected Throws a could not refresh access token error when Client ID or Secret are wrong" name="Client Auth flow works as expected Throws a could not refresh access token error when Client ID or Secret are wrong" time="0.233">
     </testcase>
   </testsuite>
-  <testsuite name="spotify.auth API client utility functions work as expected" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="8.342" tests="13">
-    <testcase classname="spotify.auth API client utility functions work as expected No initial access token to be defined" name="spotify.auth API client utility functions work as expected No initial access token to be defined" time="0.002">
+  <testsuite name="spotify.auth API client utility functions work as expected" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="5.222" tests="13">
+    <testcase classname="spotify.auth API client utility functions work as expected No initial access token to be defined" name="spotify.auth API client utility functions work as expected No initial access token to be defined" time="0.003">
     </testcase>
-    <testcase classname="spotify.auth API client utility functions work as expected No initial access token" name="spotify.auth API client utility functions work as expected No initial access token" time="0.007">
+    <testcase classname="spotify.auth API client utility functions work as expected No initial access token" name="spotify.auth API client utility functions work as expected No initial access token" time="0.001">
     </testcase>
     <testcase classname="spotify.auth API client utility functions work as expected Access token is not expired when it does not exist" name="spotify.auth API client utility functions work as expected Access token is not expired when it does not exist" time="0.001">
     </testcase>
     <testcase classname="spotify.auth API client utility functions work as expected Setting access token works successfully" name="spotify.auth API client utility functions work as expected Setting access token works successfully" time="0.001">
     </testcase>
-    <testcase classname="spotify.auth API client utility functions work as expected Setting access token with time to expire works successfully" name="spotify.auth API client utility functions work as expected Setting access token with time to expire works successfully" time="0.001">
+    <testcase classname="spotify.auth API client utility functions work as expected Setting access token with time to expire works successfully" name="spotify.auth API client utility functions work as expected Setting access token with time to expire works successfully" time="0">
     </testcase>
-    <testcase classname="spotify.auth API client utility functions work as expected Access token can be refreshed" name="spotify.auth API client utility functions work as expected Access token can be refreshed" time="0.306">
+    <testcase classname="spotify.auth API client utility functions work as expected Access token can be refreshed" name="spotify.auth API client utility functions work as expected Access token can be refreshed" time="0.381">
     </testcase>
-    <testcase classname="spotify.auth API client utility functions work as expected Access token can be refreshed with client auth flow" name="spotify.auth API client utility functions work as expected Access token can be refreshed with client auth flow" time="0.357">
+    <testcase classname="spotify.auth API client utility functions work as expected Access token can be refreshed with client auth flow" name="spotify.auth API client utility functions work as expected Access token can be refreshed with client auth flow" time="0.371">
     </testcase>
-    <testcase classname="spotify.auth API client utility functions work as expected Access token is not expired after it is refreshed" name="spotify.auth API client utility functions work as expected Access token is not expired after it is refreshed" time="0.419">
+    <testcase classname="spotify.auth API client utility functions work as expected Access token is not expired after it is refreshed" name="spotify.auth API client utility functions work as expected Access token is not expired after it is refreshed" time="0.34">
     </testcase>
     <testcase classname="spotify.auth API client utility functions work as expected Access token can be cleared" name="spotify.auth API client utility functions work as expected Access token can be cleared" time="0.001">
     </testcase>
@@ -59,13 +53,25 @@
     </testcase>
     <testcase classname="spotify.auth API client utility functions work as expected Initial client secret is set" name="spotify.auth API client utility functions work as expected Initial client secret is set" time="0">
     </testcase>
-    <testcase classname="spotify.auth API client utility functions work as expected Client ID can be cleared" name="spotify.auth API client utility functions work as expected Client ID can be cleared" time="0.001">
+    <testcase classname="spotify.auth API client utility functions work as expected Client ID can be cleared" name="spotify.auth API client utility functions work as expected Client ID can be cleared" time="0">
     </testcase>
-    <testcase classname="spotify.auth API client utility functions work as expected Client Secret can be cleared" name="spotify.auth API client utility functions work as expected Client Secret can be cleared" time="0">
+    <testcase classname="spotify.auth API client utility functions work as expected Client Secret can be cleared" name="spotify.auth API client utility functions work as expected Client Secret can be cleared" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="creates Spotify API client" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="8.708" tests="9">
-    <testcase classname="creates Spotify API client Without any options by default" name="creates Spotify API client Without any options by default" time="0.005">
+  <testsuite name="User Albums" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="5.958" tests="2">
+    <testcase classname="User Albums can be added" name="User Albums can be added" time="0.671">
+    </testcase>
+    <testcase classname="User Albums can be removed" name="User Albums can be removed" time="0.947">
+    </testcase>
+  </testsuite>
+  <testsuite name="Spotify API client works with custom fetch implementations" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="6.046" tests="2">
+    <testcase classname="Spotify API client works with custom fetch implementations works with default fetch implementation" name="Spotify API client works with custom fetch implementations works with default fetch implementation" time="1.183">
+    </testcase>
+    <testcase classname="Spotify API client works with custom fetch implementations works with custom fetch implementation node-fetch" name="Spotify API client works with custom fetch implementations works with custom fetch implementation node-fetch" time="0.559">
+    </testcase>
+  </testsuite>
+  <testsuite name="creates Spotify API client" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="6.093" tests="9">
+    <testcase classname="creates Spotify API client Without any options by default" name="creates Spotify API client Without any options by default" time="0.002">
     </testcase>
     <testcase classname="creates Spotify API client with a default url" name="creates Spotify API client with a default url" time="0.001">
     </testcase>
@@ -73,169 +79,163 @@
     </testcase>
     <testcase classname="creates Spotify API client with refreshExpiredAccessToken set to false" name="creates Spotify API client with refreshExpiredAccessToken set to false" time="0">
     </testcase>
-    <testcase classname="creates Spotify API client with an access token" name="creates Spotify API client with an access token" time="0.334">
+    <testcase classname="creates Spotify API client with an access token" name="creates Spotify API client with an access token" time="0.234">
     </testcase>
-    <testcase classname="creates Spotify API client with an access token expire date" name="creates Spotify API client with an access token expire date" time="0.361">
+    <testcase classname="creates Spotify API client with an access token expire date" name="creates Spotify API client with an access token expire date" time="0.436">
     </testcase>
-    <testcase classname="creates Spotify API client with an access token expire time" name="creates Spotify API client with an access token expire time" time="0.37">
+    <testcase classname="creates Spotify API client with an access token expire time" name="creates Spotify API client with an access token expire time" time="0.413">
     </testcase>
-    <testcase classname="Client can make successful requests returns successful response" name="Client can make successful requests returns successful response" time="0.303">
+    <testcase classname="Client can make successful requests returns successful response" name="Client can make successful requests returns successful response" time="0.644">
     </testcase>
     <testcase classname="Client can make successful requests stores the gotten access token after a request" name="Client can make successful requests stores the gotten access token after a request" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="User Tracks" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="8.786" tests="2">
-    <testcase classname="User Tracks can be added" name="User Tracks can be added" time="0.76">
+  <testsuite name="User Tracks" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="6.533" tests="2">
+    <testcase classname="User Tracks can be added" name="User Tracks can be added" time="1.591">
     </testcase>
-    <testcase classname="User Tracks can be removed" name="User Tracks can be removed" time="0.821">
-    </testcase>
-  </testsuite>
-  <testsuite name="User Albums" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="8.839" tests="2">
-    <testcase classname="User Albums can be added" name="User Albums can be added" time="0.727">
-    </testcase>
-    <testcase classname="User Albums can be removed" name="User Albums can be removed" time="0.776">
+    <testcase classname="User Tracks can be removed" name="User Tracks can be removed" time="0.766">
     </testcase>
   </testsuite>
-  <testsuite name="Spotify API client returns successful responses to searches" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="10.5" tests="7">
-    <testcase classname="Spotify API client returns successful responses to searches returns successful response for generic search" name="Spotify API client returns successful responses to searches returns successful response for generic search" time="0.752">
+  <testsuite name="Spotify API client returns successful responses to searches" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="8.519" tests="7">
+    <testcase classname="Spotify API client returns successful responses to searches returns successful response for generic search" name="Spotify API client returns successful responses to searches returns successful response for generic search" time="0.694">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchAlbums" name="Spotify API client returns successful responses to searches returns successful response for searchAlbums" time="0.525">
+    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchAlbums" name="Spotify API client returns successful responses to searches returns successful response for searchAlbums" time="0.61">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchArtists" name="Spotify API client returns successful responses to searches returns successful response for searchArtists" time="0.397">
+    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchArtists" name="Spotify API client returns successful responses to searches returns successful response for searchArtists" time="1.215">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchTracks" name="Spotify API client returns successful responses to searches returns successful response for searchTracks" time="0.481">
+    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchTracks" name="Spotify API client returns successful responses to searches returns successful response for searchTracks" time="0.668">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchPlaylists" name="Spotify API client returns successful responses to searches returns successful response for searchPlaylists" time="0.434">
+    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchPlaylists" name="Spotify API client returns successful responses to searches returns successful response for searchPlaylists" time="0.348">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchShows" name="Spotify API client returns successful responses to searches returns successful response for searchShows" time="0.395">
+    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchShows" name="Spotify API client returns successful responses to searches returns successful response for searchShows" time="0.351">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchEpisodes" name="Spotify API client returns successful responses to searches returns successful response for searchEpisodes" time="0.434">
-    </testcase>
-  </testsuite>
-  <testsuite name="Follow Users" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="12.846" tests="6">
-    <testcase classname="Follow Users can follow" name="Follow Users can follow" time="0.732">
-    </testcase>
-    <testcase classname="Follow Users can unfollow" name="Follow Users can unfollow" time="0.742">
-    </testcase>
-    <testcase classname="Follow Artists can follow" name="Follow Artists can follow" time="0.742">
-    </testcase>
-    <testcase classname="Follow Artists can unfollow" name="Follow Artists can unfollow" time="0.744">
-    </testcase>
-    <testcase classname="Follow Playlist can follow" name="Follow Playlist can follow" time="1.392">
-    </testcase>
-    <testcase classname="Follow Playlist can unfollow" name="Follow Playlist can unfollow" time="1.219">
+    <testcase classname="Spotify API client returns successful responses to searches returns successful response for searchEpisodes" name="Spotify API client returns successful responses to searches returns successful response for searchEpisodes" time="0.307">
     </testcase>
   </testsuite>
-  <testsuite name="User API endpoints work as expected" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="13.036" tests="14">
-    <testcase classname="User API endpoints work as expected Get Current User Profile" name="User API endpoints work as expected Get Current User Profile" time="0.39">
+  <testsuite name="User API endpoints work as expected" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="9.941" tests="14">
+    <testcase classname="User API endpoints work as expected Get Current User Profile" name="User API endpoints work as expected Get Current User Profile" time="0.288">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get Current users Top Artists" name="User API endpoints work as expected Get Current users Top Artists" time="0.463">
+    <testcase classname="User API endpoints work as expected Get Current users Top Artists" name="User API endpoints work as expected Get Current users Top Artists" time="0.487">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get Current users Top Tracks" name="User API endpoints work as expected Get Current users Top Tracks" time="0.43">
+    <testcase classname="User API endpoints work as expected Get Current users Top Tracks" name="User API endpoints work as expected Get Current users Top Tracks" time="0.39">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get Current users Recently Played Tracks" name="User API endpoints work as expected Get Current users Recently Played Tracks" time="0.51">
+    <testcase classname="User API endpoints work as expected Get Current users Recently Played Tracks" name="User API endpoints work as expected Get Current users Recently Played Tracks" time="0.705">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get Current users Saved Albums" name="User API endpoints work as expected Get Current users Saved Albums" time="0.49">
+    <testcase classname="User API endpoints work as expected Get Current users Saved Albums" name="User API endpoints work as expected Get Current users Saved Albums" time="0.698">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get Current users Saved Tracks" name="User API endpoints work as expected Get Current users Saved Tracks" time="0.54">
+    <testcase classname="User API endpoints work as expected Get Current users Saved Tracks" name="User API endpoints work as expected Get Current users Saved Tracks" time="0.459">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get Current users saved shows" name="User API endpoints work as expected Get Current users saved shows" time="0.391">
+    <testcase classname="User API endpoints work as expected Get Current users saved shows" name="User API endpoints work as expected Get Current users saved shows" time="0.324">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get Current users playlists" name="User API endpoints work as expected Get Current users playlists" time="0.446">
+    <testcase classname="User API endpoints work as expected Get Current users playlists" name="User API endpoints work as expected Get Current users playlists" time="0.391">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get Current users Followed Artists" name="User API endpoints work as expected Get Current users Followed Artists" time="0.37">
+    <testcase classname="User API endpoints work as expected Get Current users Followed Artists" name="User API endpoints work as expected Get Current users Followed Artists" time="0.341">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get if a list of tracks is in Current users Saved Tracks" name="User API endpoints work as expected Get if a list of tracks is in Current users Saved Tracks" time="0.368">
+    <testcase classname="User API endpoints work as expected Get if a list of tracks is in Current users Saved Tracks" name="User API endpoints work as expected Get if a list of tracks is in Current users Saved Tracks" time="0.303">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get if a list of shows is in Current users Saved Shows" name="User API endpoints work as expected Get if a list of shows is in Current users Saved Shows" time="0.363">
+    <testcase classname="User API endpoints work as expected Get if a list of shows is in Current users Saved Shows" name="User API endpoints work as expected Get if a list of shows is in Current users Saved Shows" time="0.302">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get if a list of albums is in Current users Saved Albums" name="User API endpoints work as expected Get if a list of albums is in Current users Saved Albums" time="0.391">
+    <testcase classname="User API endpoints work as expected Get if a list of albums is in Current users Saved Albums" name="User API endpoints work as expected Get if a list of albums is in Current users Saved Albums" time="0.316">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get if current user follows other users" name="User API endpoints work as expected Get if current user follows other users" time="0.376">
+    <testcase classname="User API endpoints work as expected Get if current user follows other users" name="User API endpoints work as expected Get if current user follows other users" time="0.291">
     </testcase>
-    <testcase classname="User API endpoints work as expected Get if current user follows artists" name="User API endpoints work as expected Get if current user follows artists" time="0.367">
-    </testcase>
-  </testsuite>
-  <testsuite name="Playlists can be created, modified, and deleted" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="14.465" tests="4">
-    <testcase classname="Playlists can be created, modified, and deleted can be created and deleted" name="Playlists can be created, modified, and deleted can be created and deleted" time="1.442">
-    </testcase>
-    <testcase classname="Playlists can be created, modified, and deleted can be modified" name="Playlists can be created, modified, and deleted can be modified" time="1.805">
-    </testcase>
-    <testcase classname="Playlists can be created, modified, and deleted can have tracks added" name="Playlists can be created, modified, and deleted can have tracks added" time="1.447">
-    </testcase>
-    <testcase classname="Playlists can be created, modified, and deleted can have tracks removed" name="Playlists can be created, modified, and deleted can have tracks removed" time="2.168">
+    <testcase classname="User API endpoints work as expected Get if current user follows artists" name="User API endpoints work as expected Get if current user follows artists" time="0.311">
     </testcase>
   </testsuite>
-  <testsuite name="Spotify API client returns successful responses to GET requests" errors="0" failures="0" skipped="0" timestamp="2022-11-03T02:39:47" time="23.831" tests="35">
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAlbum" name="Spotify API client returns successful responses to GET requests returns successful response for getAlbum" time="0.661">
+  <testsuite name="Follow Users" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="10.475" tests="6">
+    <testcase classname="Follow Users can follow" name="Follow Users can follow" time="1.066">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAlbums" name="Spotify API client returns successful responses to GET requests returns successful response for getAlbums" time="0.391">
+    <testcase classname="Follow Users can unfollow" name="Follow Users can unfollow" time="1.803">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAlbumTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getAlbumTracks" time="0.359">
+    <testcase classname="Follow Artists can follow" name="Follow Artists can follow" time="0.617">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtist" name="Spotify API client returns successful responses to GET requests returns successful response for getArtist" time="0.378">
+    <testcase classname="Follow Artists can unfollow" name="Follow Artists can unfollow" time="0.615">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtistAlbums" name="Spotify API client returns successful responses to GET requests returns successful response for getArtistAlbums" time="0.448">
+    <testcase classname="Follow Playlist can follow" name="Follow Playlist can follow" time="1.148">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtistTopTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getArtistTopTracks" time="0.371">
+    <testcase classname="Follow Playlist can unfollow" name="Follow Playlist can unfollow" time="0.995">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtistRelatedArtists" name="Spotify API client returns successful responses to GET requests returns successful response for getArtistRelatedArtists" time="0.373">
+  </testsuite>
+  <testsuite name="Playlists can be created, modified, and deleted" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="11.822" tests="4">
+    <testcase classname="Playlists can be created, modified, and deleted can be created and deleted" name="Playlists can be created, modified, and deleted can be created and deleted" time="2.158">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtists" name="Spotify API client returns successful responses to GET requests returns successful response for getArtists" time="0.374">
+    <testcase classname="Playlists can be created, modified, and deleted can be modified" name="Playlists can be created, modified, and deleted can be modified" time="1.623">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAudioFeaturesForTrack" name="Spotify API client returns successful responses to GET requests returns successful response for getAudioFeaturesForTrack" time="0.373">
+    <testcase classname="Playlists can be created, modified, and deleted can have tracks added" name="Playlists can be created, modified, and deleted can have tracks added" time="1.543">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAudioFeaturesForTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getAudioFeaturesForTracks" time="0.367">
+    <testcase classname="Playlists can be created, modified, and deleted can have tracks removed" name="Playlists can be created, modified, and deleted can have tracks removed" time="1.914">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAudioAnalysisForTrack" name="Spotify API client returns successful responses to GET requests returns successful response for getAudioAnalysisForTrack" time="0.977">
+  </testsuite>
+  <testsuite name="Spotify API client returns successful responses to GET requests" errors="0" failures="0" skipped="0" timestamp="2022-11-03T10:13:44" time="18.911" tests="35">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAlbum" name="Spotify API client returns successful responses to GET requests returns successful response for getAlbum" time="1.022">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAvailableGenreSeeds" name="Spotify API client returns successful responses to GET requests returns successful response for getAvailableGenreSeeds" time="0.338">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAlbums" name="Spotify API client returns successful responses to GET requests returns successful response for getAlbums" time="0.656">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getCategories" name="Spotify API client returns successful responses to GET requests returns successful response for getCategories" time="0.345">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAlbumTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getAlbumTracks" time="0.669">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getCategory" name="Spotify API client returns successful responses to GET requests returns successful response for getCategory" time="0.357">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtist" name="Spotify API client returns successful responses to GET requests returns successful response for getArtist" time="0.305">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getCategoryPlaylists" name="Spotify API client returns successful responses to GET requests returns successful response for getCategoryPlaylists" time="0.412">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtistAlbums" name="Spotify API client returns successful responses to GET requests returns successful response for getArtistAlbums" time="0.383">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getFeaturedPlaylists" name="Spotify API client returns successful responses to GET requests returns successful response for getFeaturedPlaylists" time="0.37">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtistTopTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getArtistTopTracks" time="0.319">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getNewReleases" name="Spotify API client returns successful responses to GET requests returns successful response for getNewReleases" time="0.399">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtistRelatedArtists" name="Spotify API client returns successful responses to GET requests returns successful response for getArtistRelatedArtists" time="0.313">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getRecommendations" name="Spotify API client returns successful responses to GET requests returns successful response for getRecommendations" time="0.573">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getArtists" name="Spotify API client returns successful responses to GET requests returns successful response for getArtists" time="0.343">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getTrack" name="Spotify API client returns successful responses to GET requests returns successful response for getTrack" time="0.364">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAudioFeaturesForTrack" name="Spotify API client returns successful responses to GET requests returns successful response for getAudioFeaturesForTrack" time="0.289">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getTracks" time="0.343">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAudioFeaturesForTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getAudioFeaturesForTracks" time="0.289">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShow" name="Spotify API client returns successful responses to GET requests returns successful response for getShow" time="0.461">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAudioAnalysisForTrack" name="Spotify API client returns successful responses to GET requests returns successful response for getAudioAnalysisForTrack" time="0.834">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShow with market" name="Spotify API client returns successful responses to GET requests returns successful response for getShow with market" time="0.442">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getAvailableGenreSeeds" name="Spotify API client returns successful responses to GET requests returns successful response for getAvailableGenreSeeds" time="0.295">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShows with market" name="Spotify API client returns successful responses to GET requests returns successful response for getShows with market" time="0.394">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getCategories" name="Spotify API client returns successful responses to GET requests returns successful response for getCategories" time="0.305">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShowEpisodes" name="Spotify API client returns successful responses to GET requests returns successful response for getShowEpisodes" time="0.613">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getCategory" name="Spotify API client returns successful responses to GET requests returns successful response for getCategory" time="0.291">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShowEpisodes with market" name="Spotify API client returns successful responses to GET requests returns successful response for getShowEpisodes with market" time="0.572">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getCategoryPlaylists" name="Spotify API client returns successful responses to GET requests returns successful response for getCategoryPlaylists" time="0.364">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getEpisode" name="Spotify API client returns successful responses to GET requests returns successful response for getEpisode" time="0.42">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getFeaturedPlaylists" name="Spotify API client returns successful responses to GET requests returns successful response for getFeaturedPlaylists" time="0.319">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getEpisode with market" name="Spotify API client returns successful responses to GET requests returns successful response for getEpisode with market" time="0.419">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getNewReleases" name="Spotify API client returns successful responses to GET requests returns successful response for getNewReleases" time="0.336">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getEpisodes" name="Spotify API client returns successful responses to GET requests returns successful response for getEpisodes" time="0.501">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getRecommendations" name="Spotify API client returns successful responses to GET requests returns successful response for getRecommendations" time="0.5">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getEpisodes with market" name="Spotify API client returns successful responses to GET requests returns successful response for getEpisodes with market" time="0.469">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getTrack" name="Spotify API client returns successful responses to GET requests returns successful response for getTrack" time="0.321">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getPlaylist" name="Spotify API client returns successful responses to GET requests returns successful response for getPlaylist" time="0.823">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getTracks" time="0.316">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getPlaylistTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getPlaylistTracks" time="0.848">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShow" name="Spotify API client returns successful responses to GET requests returns successful response for getShow" time="0.314">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getPlaylistCoverImage" name="Spotify API client returns successful responses to GET requests returns successful response for getPlaylistCoverImage" time="0.452">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShow with market" name="Spotify API client returns successful responses to GET requests returns successful response for getShow with market" time="0.339">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getUser" name="Spotify API client returns successful responses to GET requests returns successful response for getUser" time="0.429">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShows with market" name="Spotify API client returns successful responses to GET requests returns successful response for getShows with market" time="0.32">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests returns successful responseexpect(await spotifyUserAuth.containsMySavedTracks(tracks)).toStrictEqual([true, true, true]); for getUserPlaylists" name="Spotify API client returns successful responses to GET requests returns successful responseexpect(await spotifyUserAuth.containsMySavedTracks(tracks)).toStrictEqual([true, true, true]); for getUserPlaylists" time="0.761">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShowEpisodes" name="Spotify API client returns successful responses to GET requests returns successful response for getShowEpisodes" time="0.668">
     </testcase>
-    <testcase classname="Spotify API client returns successful responses to GET requests Get if users are following a playlist" name="Spotify API client returns successful responses to GET requests Get if users are following a playlist" time="0.387">
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getShowEpisodes with market" name="Spotify API client returns successful responses to GET requests returns successful response for getShowEpisodes with market" time="0.468">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getEpisode" name="Spotify API client returns successful responses to GET requests returns successful response for getEpisode" time="0.353">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getEpisode with market" name="Spotify API client returns successful responses to GET requests returns successful response for getEpisode with market" time="0.32">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getEpisodes" name="Spotify API client returns successful responses to GET requests returns successful response for getEpisodes" time="0.314">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getEpisodes with market" name="Spotify API client returns successful responses to GET requests returns successful response for getEpisodes with market" time="0.447">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getPlaylist" name="Spotify API client returns successful responses to GET requests returns successful response for getPlaylist" time="0.591">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getPlaylistTracks" name="Spotify API client returns successful responses to GET requests returns successful response for getPlaylistTracks" time="0.58">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getPlaylistCoverImage" name="Spotify API client returns successful responses to GET requests returns successful response for getPlaylistCoverImage" time="0.312">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful response for getUser" name="Spotify API client returns successful responses to GET requests returns successful response for getUser" time="0.311">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests returns successful responseexpect(await spotifyUserAuth.containsMySavedTracks(tracks)).toStrictEqual([true, true, true]); for getUserPlaylists" name="Spotify API client returns successful responses to GET requests returns successful responseexpect(await spotifyUserAuth.containsMySavedTracks(tracks)).toStrictEqual([true, true, true]); for getUserPlaylists" time="0.627">
+    </testcase>
+    <testcase classname="Spotify API client returns successful responses to GET requests Get if users are following a playlist" name="Spotify API client returns successful responses to GET requests Get if users are following a playlist" time="0.317">
     </testcase>
   </testsuite>
 </testsuites>
