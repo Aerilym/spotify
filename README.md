@@ -1,5 +1,11 @@
 # Spotify API Wrapper
 
+[![CI Workflow](https://github.com/Aerilym/spotify/actions/workflows/pull-request-ci.yml/badge.svg)](https://github.com/Aerilym/spotify/actions/workflows/pull-request-ci.yml)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/aerilym/spotify)
+![Coverage](.github/badges/coverage.svg)
+![GitHub](https://img.shields.io/github/license/aerilym/spotify)
+![Website](https://img.shields.io/website?label=Documentation&up_message=up&url=https%3A%2F%2Faerilym.github.io%2Fspotify%2F)
+
 This is a wrapper for the Spotify API. It is written in TypeScript and is designed to be used with any JavaScript framework. There are examples for using it with different frameworks in the `examples` folder and in the [documentation](docs/v1/).
 
 ## Usage
@@ -62,6 +68,15 @@ If there's a framework or use case you want to see an example for, please open a
 ## Issues
 
 If you encounter any issues or have any suggestions, please open an issue on the [GitHub repository](TBD). If you're confident, free to try resolve your issue or any other issues by opening a pull request and contributing to the project.
+
+## Testing
+
+![Coverage](.github/badges/coverage.svg)
+
+![Coverage lines](.github/badges/badge-lines.svg)
+![Coverage functions](.github/badges/badge-functions.svg)
+![Coverage branches](.github/badges/badge-branches.svg)
+![Coverage statements](.github/badges/badge-statements.svg)
 
 ## Contributing
 
