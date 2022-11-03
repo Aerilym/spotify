@@ -1,4 +1,3 @@
-import { SpotifyURI } from '../src/types/types';
 import { spotifyUserAuth } from './lib/clients';
 
 const tracks = [
