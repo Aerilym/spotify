@@ -1,6 +1,6 @@
 # Spotify API Wrapper
 
-[![CI Workflow](https://github.com/Aerilym/spotify/actions/workflows/pull-request-ci.yml/badge.svg)](https://github.com/Aerilym/spotify/actions/workflows/pull-request-ci.yml)
+[![CI Workflow](https://github.com/Aerilym/spotify/actions/workflows/ci-workflow.yml/badge.svg)](https://github.com/Aerilym/spotify/actions/workflows/ci-workflow.yml)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/aerilym/spotify)
 ![Coverage](.github/badges/coverage.svg)
 ![GitHub](https://img.shields.io/github/license/aerilym/spotify)
